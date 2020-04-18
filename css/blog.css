@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
  margin: auto;
@@ -39,7 +40,7 @@ body {
 .sidebar {
   background-color: #2F494D;
   color: #f5f5f5;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .sidebar a{
@@ -72,26 +73,60 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 2em;
+  padding: 15px;
 }
 
 .main {
   grid-area: mn;
   background-color: #cecece;
-  font-family: sans-serif;
-  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  padding: 5%;
 }
 
 .main h2 {
   text-align: center;
+
+}
+
+.main h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.main img {
+  width: 110%;
+  object-fit: cover;
+  height: 250px;
+  margin-left: -5%;
+  margin-top: -5%;
 }
 
 
 .footer {
   grid-area: ft;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
   height: 100%;
   background-color: #55868c;
   color: #f5f5f5;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+input[type=text] {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin-bottom: 8px;
+}
+
+input[type=submit] {
+  background-color: #2F494D;
+  color: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -105,10 +140,6 @@ body {
       "mn mn mn mn sd"
       "ft ft ft ft ft";
     text-align: center;
-  }
-
-  .main {
-
   }
 }
 
@@ -124,10 +155,6 @@ body {
     text-align: center;
   }
 
-  .main {
-    padding: 50px;
-
-  }
 
   .sidebar {
       grid-area: sd;

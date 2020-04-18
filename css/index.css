@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
  margin: auto;
 }
@@ -29,8 +31,8 @@ body {
   border: 2px solid #2F494D;
   color: #2F494D;
   margin: 5px;
-  font-family: sans-serif;
-  line-height: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  line-height:
 }
 
 .card h4 {
@@ -45,6 +47,7 @@ body {
 .card a {
   text-decoration: none;
   color: #2F494D;
+  height: 100%;
 }
 
 .card a:hover {
