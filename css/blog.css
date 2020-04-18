@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+body {
+ margin: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 110px 1fr 50px;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "hd"
+    "mn"
+    "ft";
+  text-align: center;
+}
+
+.header {
+  grid-area: hd;
+  background-color: #55868c;
+  letter-spacing: 0.2em;
+  line-height: 0.7;
+}
+
+.header a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.header h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+}
+
+.header p{
+  font-family: 'Garamond', serif;
+}
+
+.sidebar {
+  background-color: #2F494D;
+  color: #f5f5f5;
+  font-family: sans-serif;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.sidebar a:hover{
+  background-color: #55868c;
+}
+
+#avatar {
+  margin-top: 20px;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.auth-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  padding: 15px;
+}
+
+.prev-blogs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+}
+
+.main {
+  grid-area: mn;
+  background-color: #cecece;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.main h2 {
+  text-align: center;
+}
+
+
+.footer {
+  grid-area: ft;
+  padding-bottom: 30px;
+  height: 100%;
+  background-color: #55868c;
+  color: #f5f5f5;
+}
+
+
+@media(min-width: 320px) and (max-width: 720px)  {
+  .container {
+    display: grid;
+    grid-template-rows: 110px 1fr 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "hd hd hd hd hd"
+      "mn mn mn mn sd"
+      "ft ft ft ft ft";
+    text-align: center;
+  }
+
+  .main {
+
+  }
+}
+
+@media(min-width: 721px) {
+  .container {
+    display: grid;
+    grid-template-rows: 110px 1fr 50px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "mn mn mn mn mn mn sd sd"
+      "ft ft ft ft ft ft ft ft";
+    text-align: center;
+  }
+
+  .main {
+    padding: 50px;
+
+  }
+
+  .sidebar {
+      grid-area: sd;
+  }
+}
