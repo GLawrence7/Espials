@@ -11,7 +11,8 @@ body {
   grid-template-columns: auto;
   grid-template-areas:
     "hd"
-    "mn"
+    "sd"
+    "main"
     "ft";
   text-align: center;
 }
@@ -81,7 +82,7 @@ body {
 }
 
 .main {
-  grid-area: mn;
+  grid-area: main;
   background-color: #cecece;
   font-family: 'Lato', sans-serif;
   text-align: left;
@@ -133,27 +134,27 @@ input[type=submit] {
 }
 
 
-@media(min-width: 320px) and (max-width: 720px)  {
+@media(min-width: 400px) and (max-width: 800px)  {
   .container {
     display: grid;
     grid-template-rows: 110px 1fr 50px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
       "hd hd hd hd hd"
-      "mn mn mn mn sd"
+      "main main main main sd"
       "ft ft ft ft ft";
     text-align: center;
   }
 }
 
-@media(min-width: 721px) {
+@media(min-width: 801px) {
   .container {
     display: grid;
     grid-template-rows: 110px 1fr 50px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
       "hd hd hd hd hd hd hd hd"
-      "mn mn mn mn mn mn sd sd"
+      "main main main main main main sd sd"
       "ft ft ft ft ft ft ft ft";
     text-align: center;
   }
