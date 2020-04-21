@@ -92,22 +92,22 @@ main {
   padding: 5%;
 }
 
-main h2 {
-  text-align: center;
-
-}
-
-main blockquote {
-  text-align: center;
-  font-size: 16px;
-}
-
 main img {
   width: 110%;
   object-fit: cover;
   height: 250px;
   margin-left: -5%;
   margin-top: -5%;
+}
+
+.blog-text h2 {
+  text-align: center;
+
+}
+
+.blog-text blockquote {
+  text-align: center;
+  font-size: 16px;
 }
 
 footer {
