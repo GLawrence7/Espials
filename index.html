@@ -2,19 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espials</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="container">
-      <div class="header">
+      <header>
         <h1>Espials</h1>
         <p><em>Glimpses of the world the way I see it</em></p>
-      </div>
+      </header>
 
-      <div class="sidebar">
-        <a href="#subscribe">Subscribe</a>
+      <div class="subscribe-btn">
+          <a href="#subscribe">Subscribe</a>
       </div>
 
 <!-- spacer div used to ensure that the that the page title is centered -->
@@ -23,7 +24,7 @@
 
       </div>
 
-      <div class="main">
+      <main>
         <div class="card" id="one">
           <a href="blog.html">
             <img src="images/reading.png" alt="Book in the grass" >
@@ -71,15 +72,17 @@
             <p>Revisiting the buds of spring</p>
           </a>
         </div>
-      </div>
+      </main>
 
-      <div class="footer" id="subscribe">
-        <p>Provide your email below to subscribe to my blog.</p>
-        <form class="subscribe" action="index.html" method="post">
-          <input type="text" name="email" placeholder="Enter your email..."><br>
-          <input type="submit" value="Subscribe">
-        </form>
-      </div>
+      <footer>
+        <div id="subscribe">
+          <p>Provide your email below to subscribe to my blog.</p>
+          <form class="subscribe" action="index.html" method="post">
+            <input type="text" name="email" placeholder="Enter your email..."><br>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

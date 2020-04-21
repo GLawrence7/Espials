@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.header {
+header {
   grid-area: hd;
   background-color: #55868c;
   color: #f5f5f5;
@@ -10,12 +10,12 @@
   line-height: 0.7;
 }
 
-.header h1 {
+header h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 42px;
 }
 
-.header p{
+header p{
   font-family: 'Garamond', serif;
 }
 
@@ -24,20 +24,20 @@
   background-color: #55868c;
 }
 
-.sidebar {
+.subscribe-btn {
   grid-area: sd;
   background-color: #55868c;
   color: #f5f5f5;
 }
 
-.sidebar a {
+.subscribe-btn a {
   text-decoration: none;
   color: #f5f5f5;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
 }
 
-.footer {
+footer {
   grid-area: ft;
   padding-bottom: 75px;
   height: 100%;
@@ -55,7 +55,7 @@ input[type=text] {
   margin-bottom: 8px;
 }
 
-input[type=submit] {
+button[type=submit] {
   background-color: #2F494D;
   color: #f5f5f5;
   padding: 6px 12px;
